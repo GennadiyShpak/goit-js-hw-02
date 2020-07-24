@@ -11,14 +11,15 @@
 
 let numbers = [];
 let total = 0;
-
-let sum = function (input) {
+let input;
+let result;
+const sum = function (input) {
   do {
     input = prompt("Введите число");
 
     if (input === null) {
       alert("Отменено пользователем");
-      break;
+      return numbers;
     }
 
     input = Number(input);
@@ -29,12 +30,14 @@ let sum = function (input) {
     }
     numbers.push(input);
   } while (true);
-  return numbers;
 };
 
-for (let number of numbers) {
-  total += number;
-  console.log(total);
-}
-
-sum();
+const sumValue = function (input) {
+  let qwe = numbers;
+  result = 0;
+  for (let number of qwe) {
+    result += number;
+  }
+  return console.log(result);
+};
+sumValue(result);
