@@ -19,10 +19,10 @@ const isLoginUnique = function (allLogins, login) {
 const addLogin = function (allLogins, login) {
   isLoginValid(login);
   isLoginUnique(allLogins, login);
-  if (valid === false) {
+  if (!valid) {
     return 'Ошибка! Логин должен быть от 4 до 16 символов';
   }
-  if (unique === false) {
+  if (!unique) {
     return 'Такой логин уже используется!';
   }
   return 'Логин успешно добавлен!';
