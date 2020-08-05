@@ -1,4 +1,4 @@
-'use strick';
+'use strict';
 const findLongestWord = function (string) {
   const text = string.split(' ');
   let biggestWord = '';

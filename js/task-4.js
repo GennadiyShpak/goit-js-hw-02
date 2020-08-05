@@ -1,4 +1,4 @@
-'use strick';
+'use strict';
 let phrase;
 const formatString = function (string) {
   phrase =
